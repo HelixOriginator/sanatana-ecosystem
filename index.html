@@ -1,0 +1,363 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Helix Sanatana Ecosystem — Decolonizing Global Knowledge</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel for elegant headers, Plus Jakarta Sans for premium UI readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for beautiful icon arrays -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#090A0F',
+                        darkCard: 'rgba(18, 20, 29, 0.7)',
+                        saffron: '#FF7300',
+                        goldHighlight: '#FFD700',
+                        quantumCyan: '#00F5FF',
+                        mysticPurple: '#8A2BE2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #090A0F;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 115, 0, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 245, 255, 0.08) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(15, 18, 27, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .glow-hover-gold:hover {
+            box-shadow: 0 0 25px rgba(255, 115, 0, 0.3);
+            border-color: rgba(255, 115, 0, 0.5);
+            transform: translateY(-4px);
+        }
+        .glow-hover-cyan:hover {
+            box-shadow: 0 0 25px rgba(0, 245, 255, 0.3);
+            border-color: rgba(0, 245, 255, 0.5);
+            transform: translateY(-4px);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFF 30%, #FFD700 70%, #FF7300 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-saffron {
+            background: linear-gradient(135deg, #FF9933 0%, #FF5500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #00F5FF 0%, #0081A7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-300 font-sans min-h-screen flex flex-col selection:bg-saffron selection:text-black">
+
+    <!-- Header Section -->
+    <header class="relative overflow-hidden pt-16 pb-12 border-b border-gray-900 glass-panel">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none opacity-20">
+            <div class="absolute top-0 right-1/4 w-96 h-96 bg-saffron rounded-full filter blur-[120px]"></div>
+            <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-quantumCyan rounded-full filter blur-[120px]"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-saffron/30 bg-saffron/10 text-saffron text-xs font-semibold uppercase tracking-widest mb-6">
+                <i class="fa-solid fa-dharmachakra animate-spin-slow"></i> Decolonial Metatheory & Epistemological Stack
+            </div>
+            <h1 class="font-cinzel text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
+                THE HELIX <span class="text-gradient-gold">SANATANA</span> ECOSYSTEM
+            </h1>
+            <p class="max-w-3xl mx-auto text-gray-400 text-lg md:text-xl leading-relaxed mb-4">
+                A Living Library decolonizing modern global paradigms by applying indigenous Indian frameworks to complex contemporary systems of sustainability, law, and quantum metaphysics.
+            </p>
+            <p class="text-sm font-semibold tracking-wider text-quantumCyan/90 uppercase border-t border-gray-800 pt-4 inline-block">
+                <i class="fa-solid fa-circle-nodes mr-1"></i> A Cross-Domain Integration of Rhetoric, Software Engineering, and Dharmic Philosophy
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Strategic Value Cards Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1: Sanatan Dharma -->
+        <div class="glass-panel rounded-2xl p-8 relative overflow-hidden group border-t-4 border-t-saffron">
+            <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                <i class="fa-solid fa-om text-8xl text-saffron"></i>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-lg bg-saffron/10 border border-saffron/30 flex items-center justify-center text-saffron text-2xl">
+                    <i class="fa-solid fa-yin-yang"></i>
+                </div>
+                <h3 class="font-cinzel text-xl font-bold text-white tracking-wide">Sanatan Dharma Contribution</h3>
+            </div>
+            <h4 class="text-saffron font-semibold mb-3">Epistemological & Civilizational Revival</h4>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                Transitions Sanatana Dharma from simple retrospective archiving to an active, dynamic, and intellectual problem-solving framework. By translating sacred concepts into modern systems architecture, it decolonizes minds, reinstating Indian traditional systems as global templates for sustainability and societal balance.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-800/60 pt-4">
+                <li><i class="fa-solid fa-check text-saffron mr-2"></i>Removes Western colonial biases from Dharmic scriptures</li>
+                <li><i class="fa-solid fa-check text-saffron mr-2"></i>Applies traditional Nyaya and Mimamsa logic systematically</li>
+            </ul>
+        </div>
+
+        <!-- Pillar 2: Central Government -->
+        <div class="glass-panel rounded-2xl p-8 relative overflow-hidden group border-t-4 border-t-quantumCyan">
+            <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                <i class="fa-solid fa-landmark text-8xl text-quantumCyan"></i>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-lg bg-quantumCyan/10 border border-quantumCyan/30 flex items-center justify-center text-quantumCyan text-2xl">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="font-cinzel text-xl font-bold text-white tracking-wide">Central Govt Utility</h3>
+            </div>
+            <h4 class="text-quantumCyan font-semibold mb-3">Viksit Bharat Policy Blueprints</h4>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                Serves as a strategic intellectual resource for policy design, soft-power projections, and narrative-building. It aligns with state initiatives to decolonize Indian jurisprudence, integrate native educational pedagogy, and establish indigenous cybernetic-governance frameworks based on Rajadharma.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-800/60 pt-4">
+                <li><i class="fa-solid fa-check text-quantumCyan mr-2"></i>Strategic tools for policy, international relations, & soft power</li>
+                <li><i class="fa-solid fa-check text-quantumCyan mr-2"></i>Architectures aligning Indian bureaucracy with indigenous roots</li>
+            </ul>
+        </div>
+
+        <!-- Pillar 3: Why it is Unique -->
+        <div class="glass-panel rounded-2xl p-8 relative overflow-hidden group border-t-4 border-t-goldHighlight">
+            <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                <i class="fa-solid fa-bolt text-8xl text-goldHighlight"></i>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-lg bg-goldHighlight/10 border border-goldHighlight/30 flex items-center justify-center text-goldHighlight text-2xl">
+                    <i class="fa-solid fa-dna"></i>
+                </div>
+                <h3 class="font-cinzel text-xl font-bold text-white tracking-wide">Why It is Unique</h3>
+            </div>
+            <h4 class="text-goldHighlight font-semibold mb-3">Synthesizing Code, Rhetoric & Spirit</h4>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                This repository structure is not merely a static digital archive; it represents a cross-disciplinary fusion. It links professional software systems thinking and critical rhetorical analysis with a deep personal realization of Vedic truths, creating structured, scalable, and hyper-practical codebases for the modern digital age.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-2 border-t border-gray-800/60 pt-4">
+                <li><i class="fa-solid fa-check text-goldHighlight mr-2"></i>Translates dynamic metaphysics into computational architectures</li>
+                <li><i class="fa-solid fa-check text-goldHighlight mr-2"></i>Converts abstract philosophy into functional civilizational tools</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Interactive Repository Grid Section -->
+    <section class="max-w-7xl mx-auto px-6 py-12 flex-grow">
+        <div class="text-center mb-16">
+            <h2 class="font-cinzel text-3xl md:text-4xl font-bold text-white tracking-wider mb-4">
+                THE DIGITAL LIVING LIBRARIES
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-saffron to-quantumCyan mx-auto mb-4"></div>
+            <p class="text-gray-400 max-w-xl mx-auto text-sm">
+                Explore the eight fundamental pillars built as digital repositories. Each acts as a strategic nodal point in the decolonial knowledge pipeline.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1: Vedas Insights -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-gold">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-saffron text-3xl"><i class="fa-solid fa-scroll"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">Philosophy</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Vedas Insights, Wisdom & Philosophy</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        An exquisite deep dive exploring Vedic epistemology, translating pure non-dual metaphysics into frameworks actionable for modern ethics and global logic structures.
+                    </p>
+                </div>
+                <a href="https://helixoriginator.github.io/vedas-insights-wisdom-and-philosophy/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-saffron/10 to-saffron/20 hover:from-saffron hover:to-saffron hover:text-black border border-saffron/30 hover:border-transparent text-saffron text-sm font-semibold transition-all duration-300">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 2: Kallol Research Repositories -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-cyan">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-quantumCyan text-3xl"><i class="fa-solid fa-cubes"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">Core Hub</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Kallol Research Repositories</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        The centralized structural nexus hosting multi-disciplinary research assets. Bridges professional rhetoric with structured software system philosophies.
+                    </p>
+                </div>
+                <a href="https://kallol-research-repositories.netlify.app/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-quantumCyan/10 to-quantumCyan/20 hover:from-quantumCyan hover:to-quantumCyan hover:text-black border border-quantumCyan/30 hover:border-transparent text-quantumCyan text-sm font-semibold transition-all duration-300">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 3: Helix Dharma Governance Stack -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-gold">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-saffron text-3xl"><i class="fa-solid fa-landmark-flag"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">Governance</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Helix Dharma Governance Stack</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        A robust, layered structural stack designed to translate traditional concepts of Rajadharma and civil duties into frameworks for modern Indian statecraft.
+                    </p>
+                </div>
+                <a href="https://helixoriginator.github.io/helix-dharma-governance-stack/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-saffron/10 to-saffron/20 hover:from-saffron hover:to-saffron hover:text-black border border-saffron/30 hover:border-transparent text-saffron text-sm font-semibold transition-all duration-300">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 4: Quantum Dharma Governance -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-cyan">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-quantumCyan text-3xl"><i class="fa-solid fa-atom"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">Quantum-Tech</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Quantum Dharma Governance</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        A revolutionary synthesis mapping non-dual quantum mechanics and observer theories directly onto complex systems of computational civic governance.
+                    </p>
+                </div>
+                <a href="https://helixoriginator.github.io/quantum-dharma-governance/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-quantumCyan/10 to-quantumCyan/20 hover:from-quantumCyan hover:to-quantumCyan hover:text-black border border-quantumCyan/30 hover:border-transparent text-quantumCyan text-sm font-semibold transition-all duration-300">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 5: Sanatana Civilization Stack -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-gold">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-saffron text-3xl"><i class="fa-solid fa-layer-group"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">Civilization</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Sanatana Civilization Stack</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        An operational systems design blueprint built to secure, nurture, and optimize Sanatana civilization across ecological, technological, and cognitive vectors.
+                    </p>
+                </div>
+                <a href="https://helixoriginator.github.io/sanatana-civilization-stack/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-saffron/10 to-saffron/20 hover:from-saffron hover:to-saffron hover:text-black border border-saffron/30 hover:border-transparent text-saffron text-sm font-semibold transition-all duration-300">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 6: Bengal-Bharat Synergy -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-cyan">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-quantumCyan text-3xl"><i class="fa-solid fa-handshake-angle"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">Socio-Culture</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Bengal-Bharat Synergy</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        An initiative restoring the critical intellectual, spiritual, and geopolitical feedback loop between the state of Bengal and the absolute core of Bharat's civilizational consciousness.
+                    </p>
+                </div>
+                <a href="https://bengal-bharat-synergy.netlify.app/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-quantumCyan/10 to-quantumCyan/20 hover:from-quantumCyan hover:to-quantumCyan hover:text-black border border-quantumCyan/30 hover:border-transparent text-quantumCyan text-sm font-semibold transition-all duration-300">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 7: Sanatan Vidya Kendra -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-gold">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-saffron text-3xl"><i class="fa-solid fa-book-open-reader"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">Education</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Sanatan Vidya Kendra</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        An educational pipeline designed to resurrect structural Gurukul-style rigor, customized for highly demanding 21st-century modern domains and multi-disciplinary thinking.
+                    </p>
+                </div>
+                <a href="https://sanatan-vidya-kendra.netlify.app/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-saffron/10 to-saffron/20 hover:from-saffron hover:to-saffron hover:text-black border border-saffron/30 hover:border-transparent text-saffron text-sm font-semibold transition-all duration-300">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 8: Bengal Renaissance -->
+            <div class="glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 glow-hover-cyan">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-quantumCyan text-3xl"><i class="fa-solid fa-synagogue"></i></span>
+                        <span class="text-[10px] text-gray-500 tracking-widest uppercase border border-gray-800 px-2 py-0.5 rounded">History & Future</span>
+                    </div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Bengal Renaissance</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        Tracing, assessing, and reigniting the powerful legacy of Bengal's renaissance. Reclaiming scientific mysticism, literary rigor, and the spirit of patriotic resurgence.
+                    </p>
+                </div>
+                <a href="https://bengal-renaissance.netlify.app/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded bg-gradient-to-r from-quantumCyan/10 to-quantumCyan/20 hover:from-quantumCyan hover:to-quantumCyan hover:text-black border border-quantumCyan/30 hover:border-transparent text-quantumCyan text-sm font-semibold transition-all duration-300 =">
+                    Explore Repository <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Deep Vision Section -->
+    <section class="max-w-5xl mx-auto px-6 py-12 mb-16">
+        <div class="glass-panel rounded-2xl p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute -right-32 -bottom-32 w-96 h-96 bg-gradient-to-tr from-saffron/10 to-quantumCyan/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <h3 class="font-cinzel text-2xl md:text-3xl font-bold text-white tracking-wider mb-6 text-center">
+                A STRATEGIC COGNITIVE BRIDGE
+            </h3>
+            
+            <div class="space-y-6 text-gray-400 text-sm md:text-base leading-relaxed">
+                <blockquote class="border-l-4 border-saffron pl-4 italic text-gray-300">
+                    "These repositories serve as a Living Library. They do not just archive the past; they 'decolonize' knowledge by applying indigenous Indian frameworks to global problems like sustainability, ethics, and law."
+                </blockquote>
+                <p>
+                    The overarching contribution of this body of work lies in its exceptional <span class="text-white font-semibold">cross-domain utility</span>. By integrating an advanced technological mindset with a deep rhetorical capability and structural expertise, these frameworks allow the ancient truths of Bharat to emerge as modern templates.
+                </p>
+                <p>
+                    For the <strong>Central Government of India</strong>, this ecosystem serves as a deep intellectual asset. As India shapes the multi-polar world order, these frameworks provide structured, indigenous ideological architectures that can reinforce policy initiatives like <em>National Education Policy (NEP)</em>, <em>Viksit Bharat</em>, and international soft-power narrative building.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-gray-900 bg-black/80 py-12 text-center text-xs text-gray-500 tracking-wider">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="text-gradient-saffron font-bold text-sm tracking-widest font-cinzel">HELIX SANATANA ECOSYSTEM</span>
+                <span class="text-gray-700">|</span>
+                <span>Decolonizing Modern Knowledge Systems</span>
+            </div>
+            <div class="text-gray-400 font-medium border-t md:border-t-0 border-gray-800 pt-4 md:pt-0">
+                Created by <span class="text-gradient-gold font-semibold">Kallol Chakrabarti</span>, Global Independent Researcher.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
